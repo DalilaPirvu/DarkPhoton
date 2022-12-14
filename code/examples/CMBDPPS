@@ -1,0 +1,8 @@
+#!/bin/bash
+## Script for PI cluster symmetry:
+#SBATCH --partition=longq
+#SBATCH --nodes=8
+#SBATCH --time=168:00:00
+
+conda activate conda_env
+python3 script.py >> ./data/output10.txt
